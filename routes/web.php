@@ -68,6 +68,3 @@ Route::get('/perekonomian', function () {
 Route::get('/lkdikd', function () {
     return view('lkdikd');
 });
-
-Route::get('/grafik/edit', [GrafikController::class, 'edit'])->name('grafik.edit');
-Route::put('/grafik/update', [GrafikController::class, 'update'])->name('grafik.update');
