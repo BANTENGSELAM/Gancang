@@ -56,7 +56,7 @@ Route::prefix('dashboard')->middleware(['auth', 'verified'])->group(function () 
     Route::put('/berita/{berita}', [BeritaController::class, 'update'])->name('berita.update');
     Route::get('/berita/{id}', [BeritaController::class, 'show'])->name('berita.show');
     Route::delete('/berita/{berita}', [BeritaController::class, 'destroy'])->name('berita.destroy');
-    Route::get('/grafikdesa}', [BeritaController::class, 'index'])->name('grafikdesa.index');
+    Route::get('/grafikdesa}', [BeritaController::class, 'grafikdesa'])->name('grafikdesa.index');
 });
 
 Route::get('/beritapublik', [BeritaController::class, 'indexPublik'])->name('beritapublik');

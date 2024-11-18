@@ -18,14 +18,13 @@
                 @endif
             </div>
             
-
-            {{-- Tombol Ubah Grafik --}}
+             {{-- Tombol Tambah Berita --}}
             <div class="mb-6">
                 <a href="{{ route('berita.create') }}" class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 transition duration-300">
                    Tambah Berita
                 </a>
 
-                 {{-- Tombol Tambah Berita --}}
+                {{-- Tombol Ubah Grafik --}}
                  <a href="{{ route('grafikdesa.index') }}" class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 transition duration-300 mx-6">
                    Ubah Grafik
                 </a>
