@@ -26,7 +26,7 @@
                 </a>
 
                  {{-- Tombol Tambah Berita --}}
-                 <a href="{{ route('berita.create') }}" class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 transition duration-300 mx-6">
+                 <a href="{{ route('grafikdesa.index') }}" class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 transition duration-300 mx-6">
                    Ubah Grafik
                 </a>
            

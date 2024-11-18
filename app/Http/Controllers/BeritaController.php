@@ -16,7 +16,7 @@ class BeritaController extends Controller
 
     public function grafikdesa()
     {
-        return view('grafikdesa');
+        return view('grafikdesa.index');
     }
 
     public function create()
