@@ -29,6 +29,7 @@
             @endisset
 
             <!-- Page Content -->
+            {{ $slot }}
             
         </div>
     </body>

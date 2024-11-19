@@ -13,11 +13,13 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach($keuangan as $item)
                     <tr data-category="infrastruktur">
-                        <td class="border border-gray-300 px-4 py-2 cursor-pointer">Pembangunan Infrastruktur</td>
-                        <td class="border border-gray-300 px-4 py-2">50,000,000</td>
+                        <td class="border border-gray-300 px-4 py-2 cursor-pointer">{{ $item->kategori }}</td>
+                        <td class="border border-gray-300 px-4 py-2">{{ number_format($item->jumlah, 0, ',', ',') }}</td>
                     </tr>
-                    <tr data-category="pendidikan">
+                    @endforeach
+                    {{-- <tr data-category="pendidikan">
                         <td class="border border-gray-300 px-4 py-2 cursor-pointer">Pendidikan</td>
                         <td class="border border-gray-300 px-4 py-2">20,000,000</td>
                     </tr>
@@ -28,7 +30,7 @@
                     <tr data-category="lainnya">
                         <td class="border border-gray-300 px-4 py-2 cursor-pointer">Lain-lain</td>
                         <td class="border border-gray-300 px-4 py-2">10,000,000</td>
-                    </tr>
+                    </tr> --}}
                 </tbody>
             </table>
         </div>
@@ -36,7 +38,7 @@
         <!-- Grafik Keuangan -->
         <div class="bg-white p-6 rounded-lg shadow-lg mb-8">
             <h2 class="text-2xl font-semibold text-gray-800 mb-4">Visualisasi Keuangan</h2>
-            <canvas id="chartKeuangan" class="h-40 w-40"></canvas>
+            <canvas id="chartKeuangan" class="h-46 w-40"></canvas>
         </div>
 
         <!-- Detail Kategori yang Diketik -->
@@ -83,13 +85,15 @@
                         "#4CAF50",
                         "#FF9800",
                         "#2196F3",
-                        "#F44336"
+                        "#F44336",
+                        "#FFE31A"
                     ],
                     hoverBackgroundColor: [
                         "#66BB6A",
                         "#FFB74D",
                         "#42A5F5",
-                        "#EF5350"
+                        "#EF5350",
+                        "#FFE700"
                     ]
                 }]
             },

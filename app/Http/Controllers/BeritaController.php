@@ -14,10 +14,22 @@ class BeritaController extends Controller
         return view('dashboard', compact('beritas'));
     }
 
-    public function grafikdesa()
-    {
-        return view('grafikdesa.index');
-    }
+    // public function getGrafik()
+    // {
+    //     return view('grafikdesa.update');
+    // }
+
+    // public function updateGrafik(Request $request)
+    // {
+    //     $request->validate([
+    //         'chartData' => 'required|json', // Pastikan data berbentuk JSON
+    //     ]);
+
+    //     // Simpan data ke file atau database (sesuai kebutuhan)
+    //     Storage::put('grafik_data.json', $request->chartData);
+
+    //     return redirect()->route('grafikdesa.update')->with('success', 'Data grafik berhasil diperbarui.');
+    // }
 
     public function create()
     {

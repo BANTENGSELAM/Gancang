@@ -24,10 +24,24 @@
                    Tambah Berita
                 </a>
 
-                {{-- Tombol Ubah Grafik --}}
-                 <a href="{{ route('grafikdesa.index') }}" class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 transition duration-300 mx-6">
+                  {{-- Tombol Kelola Keuangan --}}
+                <a href="{{ route('keuangan.index') }}" class="px-4 mx-10 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 transition duration-300">
+                    Kelola Keuangan
+                 </a>
+
+                  {{-- Tombol Kelola Grafik Statistik Masyrakat --}}
+                <a href="{{ route('population.index') }}" class="px-4 mx-15 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 transition duration-300">
+                    Kelola Statistik Penduduk
+                 </a>
+
+           
+          
+                
+
+                {{-- Tombol Ubah Grafik
+                 <a href="{{ route('grafikdesa.update') }}" class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow hover:bg-blue-600 transition duration-300 mx-6">
                    Ubah Grafik
-                </a>
+                </a> --}}
            
             </div>
 
